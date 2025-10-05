@@ -1,6 +1,6 @@
 // Coding Challenge 6a
 
-// Step 1
+// Step 2
 class Employee {
     constructor(name, department) {
         this.name = name;
@@ -11,7 +11,7 @@ class Employee {
     }
 }
 
-// Step 2
+// Step 3
 class Manager extends Employee {
     constructor(name, department, teamSize) {
         super(name, department);
@@ -21,3 +21,13 @@ class Manager extends Employee {
         return `${this.name} manages in the department of ${this.department} a team of ${this.teamSize}`;
     }
 }
+
+// Step 4
+
+let emp1 = new Employee('Lynn', 'Marketing');
+let emp2 = new Employee('Noah', 'Finance');
+let emp3 = new Employee('Ana', 'Customer Relations');
+
+let man1 = new Manager('Horacio', 'Marketing');
+let man2 = new Manager('Ruby', 'Finance');
+let man3 = new Manager('Robert', 'Customer Relations');
