@@ -17,13 +17,12 @@ class Manager extends Employee {
         super(name, department);
         this.teamSize = teamSize
     }
-    describe(){
+    describe() {
         return `${this.name} manages in the department of ${this.department} a team of ${this.teamSize}`;
     }
 }
 
 // Step 4
-
 let emp1 = new Employee('Lynn', 'Marketing');
 let emp2 = new Employee('Noah', 'Finance');
 let emp3 = new Employee('Ana', 'Customer Relations');
@@ -31,3 +30,20 @@ let emp3 = new Employee('Ana', 'Customer Relations');
 let man1 = new Manager('Horacio', 'Marketing');
 let man2 = new Manager('Ruby', 'Finance');
 let man3 = new Manager('Robert', 'Customer Relations');
+
+
+// Step 5
+class Company {
+    constructor(employees = []) {
+        this.employees = employees;
+    }
+    addEmployee(employee) {
+        this.employees.push(employee)
+    }
+    listEmployees() {
+        this.employees.forEach(employee => {console.log(employee.describe());
+        })
+    }
+}
+
+// Step 6
